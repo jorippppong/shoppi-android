@@ -18,6 +18,8 @@ import com.example.shoppi_android.databinding.ItemHomeBannerBinding
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
+
+//아이템 여러 개를 ListAdapter 로 표현, dataBinding 사용 : item_home_banner.xml
 class HomeBannerAdapter : ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(
     BannerDiffCallback()
 ) {

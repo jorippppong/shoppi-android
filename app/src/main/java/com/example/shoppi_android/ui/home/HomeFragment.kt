@@ -38,6 +38,7 @@ class HomeFragment : Fragment() {
         setTopBanners()
     }
 
+    //ViewModel 의 title 속성을 관찰 하고, 해당 값이 변경될 때마다 binding.title 에 Update 하는 역할
     private fun setToolbar() {
         viewModel.title.observe(viewLifecycleOwner) { title ->
             binding.title = title

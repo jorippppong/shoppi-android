@@ -6,6 +6,7 @@ import com.example.shoppi_android.R
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
+//TODO : item_home_banner 에서 둘 다 사용하던데 왜...?
 @BindingAdapter("priceAmount")
 fun applyPriceFormat(view: TextView, price:Int){
     val decimalFormat = DecimalFormat("#,###")
